@@ -29,7 +29,7 @@ const Nav = () => {
 
   const content = (
     <div
-      className={`lg:hidden block absolute top-16 w-full left-0 right-0 transition-transform ${
+      className={`bg-white dark:bg-black lg:hidden block absolute top-16 w-full left-0 right-0 transition-transform ${
         click ? "translate-y-0" : "-translate-y-full"
       }`}
     >

@@ -13,7 +13,7 @@ const container = (delay) =>
 
 const Home = () => {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div id="Home" className="min-h-screen flex flex-col">
       {/* Main content container */}
       <div className="hero-content container mx-auto px-6 py-12 sm:px-10 md:px-12 lg:px-8 lg:mx-4 my-12 md:mx-4 lg:pr-12 sm:my-16 md:my-12">
         <div className="flex flex-col-reverse md:flex-row text-black dark:text-neutral-200 items-center">
