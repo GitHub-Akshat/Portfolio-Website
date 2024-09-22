@@ -91,7 +91,7 @@ const Education = () =>
                     <motion.div 
                         initial={{x:-100, opacity:0}}
                         whileInView={{x:0, opacity:1}}
-                        transition={{duration:0.5, delay:0.4}}className="flex flex-row shadow-xl dark:shadow-[0_10px_15px_-3px_rgba(255,255,255,0.3)] w-full md:w-1/2 bg-neutral-200 text-gray-800 dark:bg-white dark:text-black rounded-b-lg rounded-s-lg transform hover:scale-110 transition-transform duration-300">
+                        transition={{duration:0.5, delay:0.3}}className="flex flex-row shadow-xl dark:shadow-[0_10px_15px_-3px_rgba(255,255,255,0.3)] w-full md:w-1/2 bg-neutral-200 text-gray-800 dark:bg-white dark:text-black rounded-b-lg rounded-s-lg transform hover:scale-110 transition-transform duration-300">
                         <div className="w-1/4 py-12 pl-4">
                             <img src={DVM} alt="School-College"/>
                         </div>
