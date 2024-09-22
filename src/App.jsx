@@ -1,7 +1,10 @@
-
 import About from "./Components/About";
+import Education from "./Components/Education";
 import Home from "./Components/Home";
 import Nav from "./Components/Nav";
+import Projects from "./Components/Projects";
+import Contact from "./Components/Contact";
+import Skills from "./Components/skills";
 
 const App = () => {
   return (
@@ -13,6 +16,10 @@ const App = () => {
       <Nav/>
       <Home/>
       <About/>
+      <Education/>
+      <Skills/>
+      <Projects/>
+      <Contact/>
     </div>
   </div>
   );
