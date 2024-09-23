@@ -51,15 +51,21 @@ const Skills = () => {
         modules={[Pagination, Navigation]}
         spaceBetween={50}
         slidesPerView={1}
-        navigation
-        pagination={{ clickable: true }}
+        navigation={{
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        }}
+        pagination={{    
+          clickable: true,
+          renderBullet: (index, className) => {
+            return `<span class="${className} bg-blue-700 dark:bg-gray-300 my-4"></span>`; // Change the colors here
+        }}}
         onSlideChange={() => console.log('slide change')}
         onSwiper={(swiper) => console.log(swiper)}
         loop={true}
-        style={{
-          '--swiper-pagination-bullet-bottom': '20', 
-        }}
       >
+      <div className="swiper-button-prev text-blue-700 dark:text-gray-300 md:p-16"></div>
+      <div className="swiper-button-next text-blue-700 dark:text-gray-300 md:p-16"></div>
       <SwiperSlide className="p-4">
         <div className="flex flex-col justify-center">
           <h2 className="mb-10 md:mb-16 pt-3 pb-3 text-black dark:text-neutral-200 text-lg sm:text-xl lg:text-2xl font-normal text-center">Technology</h2>

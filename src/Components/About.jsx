@@ -7,7 +7,7 @@ const About = () => {
       <motion.h2 
         initial={{y:-100 , opacity:0}}
         whileInView={{y:0 , opacity:1}}
-        transition={{duration:0.5 , delay:0.2}}
+        transition={{duration:0.5 , delay:0.3}}
         className="my-12 md:my-20 pt-3 pb-3 text-black dark:text-neutral-200 text-2xl sm:text-3xl lg:text-4xl font-semibold text-center">
         About Me
       </motion.h2>
