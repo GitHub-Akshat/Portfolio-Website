@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { IoSunny, IoMoon } from "react-icons/io5";
-const Logo = "/src/assets/bb.png";
+import Logo from "../assets/bb.png";
 
 const NavforAdmin = () => {
     const [dark, setDark] = useState(false);
