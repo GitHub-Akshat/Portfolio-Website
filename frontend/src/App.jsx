@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import { Toaster } from "react-hot-toast"
 import { Navigate, Route, Routes } from "react-router-dom"
-import Homepage from "./Pages/homepage";
+import Homepage from "./Pages/Homepage";
 import LogInPage from "./Pages/Admin/Login";
 import AdminHome from "./Pages/Admin/Home";
 import authStore from "./Store/authStore";
