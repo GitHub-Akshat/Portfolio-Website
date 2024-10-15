@@ -7,7 +7,7 @@ import { AddProject, DeleteProject, GetProjects } from "../controller/project.js
 
 projectRoutes.get("/check-auth" , verifyToken, checkAuth);
 projectRoutes.get("/getprojects", GetProjects);
-projectRoutes.post("/addprojects", upload.single('image'), AddProject);
-projectRoutes.delete("/deleteproject/:id", DeleteProject); 
+projectRoutes.post("/addprojects", verifyToken, upload.single('image'), AddProject);
+projectRoutes.delete("/deleteproject/:id", verifyToken, DeleteProject); 
 
 export default projectRoutes

@@ -5,6 +5,6 @@ const adminRoutes = express.Router();
 
 adminRoutes.get("/check-auth" , verifyToken, checkAuth);
 adminRoutes.post("/login", Login);
-adminRoutes.post("/logout", LogOut);
+adminRoutes.post("/logout", verifyToken, LogOut);
 
 export default adminRoutes;

@@ -3,8 +3,7 @@ import { useState, useEffect } from "react";
 import { FaTimes } from "react-icons/fa";
 import { CiMenuFries } from "react-icons/ci";
 import { IoSunny, IoMoon } from "react-icons/io5";
-
-const Logo = "/src/assets/bb.png";
+import Logo from "../assets/bb.png";
 
 const Nav = () => {
   const [click, setClick] = useState(false);

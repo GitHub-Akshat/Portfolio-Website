@@ -1,6 +1,6 @@
 import { RiContactsBookFill } from "react-icons/ri";
 import { motion } from "framer-motion";
-import Swal from 'sweetalert2'
+import Swal from 'sweetalert2';
 
 const Contact = () => {
 
@@ -8,7 +8,7 @@ const Contact = () => {
     event.preventDefault();
     const formData = new FormData(event.target);
 
-    formData.append("access_key", "d7031f3a-1eb4-44b6-884a-b872fbcbe602");
+    formData.append("access_key", import.meta.env.VITE_WEB_3_ID);
 
     const object = Object.fromEntries(formData);
     const json = JSON.stringify(object);
@@ -27,6 +27,14 @@ const Contact = () => {
         title: "Success",
         text: "Message sent successfully!",
         icon: "success"
+      });
+      event.target.reset();
+    }
+    else {
+      Swal.fire({
+        title: "Error",
+        text: "There was an error sending your message. Please try again.",
+        icon: "error"
       });
     }
   };
