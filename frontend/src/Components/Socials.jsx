@@ -18,10 +18,10 @@ const Socials = () => {
         <a href="https://github.com/GitHub-Akshat" target="_blank" rel="noopener noreferrer" className="hover:text-purple-500 dark:hover:text-purple-300 transition-all duration-300 transform hover:scale-125">
             <FaGithub/> 
         </a>
-        <a href="https://x.com/AkshatS05004078?t=iBSCxb01jeUTGIqbwoOswQ&s=08" target="_blank" rel="noopener noreferrer" className="hover:text-purple-500 dark:hover:text-purple-300 transition-all duration-300 transform hover:scale-125">
+        <a href="https://x.com/BuildWithAkshat" target="_blank" rel="noopener noreferrer" className="hover:text-purple-500 dark:hover:text-purple-300 transition-all duration-300 transform hover:scale-125">
             <FaSquareXTwitter/> 
         </a>
-        <a href="https://www.instagram.com/aksh_at_03?igsh=dWdrazF2OHU4NWVy" target="_blank" rel="noopener noreferrer" className="hover:text-purple-500 dark:hover:text-purple-300 transition-all duration-300 transform hover:scale-125">
+        <a href="https://www.instagram.com/aksh_at_03" target="_blank" rel="noopener noreferrer" className="hover:text-purple-500 dark:hover:text-purple-300 transition-all duration-300 transform hover:scale-125">
             <FaInstagramSquare/> 
         </a>
     </motion.div>

@@ -1,13 +1,13 @@
-import About from "./Components/About";
-import Education from "./Components/Education";
-import Home from "./Components/Home";
-import Nav from "./Components/Nav";
-import Projects from "./Components/Projects";
-import Contact from "./Components/Contact";
-import Skills from "./Components/skills";
-import Footer from "./Components/Footer";
+import About from "../Components/About";
+import Education from "../Components/Education";
+import Home from "../Components/Home";
+import Nav from "../Components/Nav";
+import Projects from "../Components/Projects";
+import Contact from "../Components/Contact";
+import Skills from "../Components/skills";
+import Footer from "../Components/Footer";
 
-const App = () => {
+const Homepage = () => {
   return (
   <div className="overflow-x-hidden antialiased">
     <div className="fixed top-0 -z-10 h-full w-full">
@@ -29,4 +29,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Homepage

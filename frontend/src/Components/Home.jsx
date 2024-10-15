@@ -45,7 +45,7 @@ const Home = () => {
               initial={{y:100, opacity:0}}
               animate={{y:0,opacity:1}}
               transition={{duration:0.9, ease: "easeInOut" ,delay:0.9}}
-              href={"https://www.google.com"}
+              href="https://drive.google.com/file/d/1PmkCeiw56T5qK1lB9XacM6iCKaIm_0uQ/view?usp=drive_link"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block mt-6 px-6 py-2 text-white bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-lg transition-all hover:rounded-2xl duration-300
@@ -60,17 +60,17 @@ const Home = () => {
             <motion.img
               initial={{ x :100, opacity:0}}
               animate={{x:0,opacity:1,borderRadius: [
-                '60% 40% 30% 70%/60% 30% 70% 40%', // initial
-                '30% 60% 70% 40%/50% 60% 30% 60%', // middle
-                '60% 40% 30% 70%/60% 30% 70% 40%', // end
+                '60% 40% 30% 70%/60% 30% 70% 40%', 
+                '30% 60% 70% 40%/50% 60% 30% 60%', 
+                '60% 40% 30% 70%/60% 30% 70% 40%', 
               ],}}
               transition={{
-                x: { duration: 1,delay:1.2 }, // Sliding animation for 1 second
+                x: { duration: 1,delay:1.2 }, 
                 opacity: { duration: 1 , delay:1.2}, 
                 borderRadius: {
-                  duration: 10, // Blob morph animation for 8 seconds
+                  duration: 10, 
                   ease: 'easeInOut',
-                  repeat: Infinity, // Loop the morphing animation infinitely
+                  repeat: Infinity, 
                   repeatType: 'mirror',
                 }
               }}

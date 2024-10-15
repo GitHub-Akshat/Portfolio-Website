@@ -1,7 +1,36 @@
 import { RiContactsBookFill } from "react-icons/ri";
 import { motion } from "framer-motion";
+import Swal from 'sweetalert2'
 
 const Contact = () => {
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "d7031f3a-1eb4-44b6-884a-b872fbcbe602");
+
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+
+    const res = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json"
+      },
+      body: json
+    }).then((res) => res.json());
+
+    if (res.success) {
+      Swal.fire({
+        title: "Success",
+        text: "Message sent successfully!",
+        icon: "success"
+      });
+    }
+  };
+
   return (
     <div id="Contact" className="Contact-container min-h-screen">
       <motion.div 
@@ -20,7 +49,7 @@ const Contact = () => {
       </motion.div>
 
       <div className="container mx-auto flex justify-center p-4">
-        <form className="w-full max-w-3xl bg-gray-300 dark:bg-neutral-800 shadow-lg rounded-lg p-6 space-y-6">
+        <form onSubmit={onSubmit} className="w-full max-w-3xl bg-gray-300 dark:bg-neutral-800 shadow-lg rounded-lg p-6 space-y-6">
           {/* Row 1: Name and Email */}
           <div className="flex flex-col md:flex-row md:space-x-4">
             <div className="w-full md:w-1/2">
@@ -43,7 +72,7 @@ const Contact = () => {
               <label className="block text-black dark:text-neutral-200 mb-2">
                 Mobile No.
               </label>
-              <input type="number" placeholder="Mobile Number" className="w-full px-4 py-2 border border-gray-300 dark:border-neutral-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" name="contact" required/>
+              <input type="contact number" placeholder="Mobile Number" className="w-full px-4 py-2 border border-gray-300 dark:border-neutral-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" name="contact" required/>
             </div>
             <div className="w-full md:w-1/2 mt-4 md:mt-0">
               <label className="block text-black dark:text-neutral-200 mb-2">
@@ -58,10 +87,10 @@ const Contact = () => {
             <label className="block text-black dark:text-neutral-200 mb-2">
               Description
             </label>
-            <textarea cols={25} rows={5} type="text" placeholder="Project Details" className="w-full px-4 py-2 border border-gray-300 dark:border-neutral-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" name="Project" required/>
+            <textarea cols={25} rows={5} type="text" placeholder="Project Details" className="w-full px-4 py-2 border border-gray-300 dark:border-neutral-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" name="Message" required/>
           </div>
 
-          <button className="w-full px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-all">
+          <button className="w-full px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-transform duration-200 hover:scale-105 hover:shadow-lg active:scale-95 active:shadow-none">
             Send Message
           </button>
         </form>

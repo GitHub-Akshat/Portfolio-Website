@@ -19,7 +19,7 @@ const Footer = () => {
             </div>
             <div className="flex items-center mb-2 hover:text-purple-500 dark:hover:text-purple-300  transition-all duration-300 transform hover:scale-125">
               <MdOutlineEmail className="mr-2" />
-              <span className="px-1">your-email@mail.com</span>
+              <span className="px-1">akshatji21052003@gmail.com</span>
             </div>
             <div className="flex items-center mb-2 hover:text-purple-500 dark:hover:text-purple-300  transition-all duration-300 transform hover:scale-125">
               <FaMap className="mr-2" />
@@ -27,10 +27,10 @@ const Footer = () => {
             </div>
           </div>
           <div className="flex justify-center">
-            <a href="" target="_blank" rel="noopener noreferrer" className=" hover:text-purple-500 dark:hover:text-purple-300 transition-all duration-300 transform hover:scale-150">
+            <a href="https://wa.me/+918109044092" target="_blank" rel="noopener noreferrer" className=" hover:text-purple-500 dark:hover:text-purple-300 transition-all duration-300 transform hover:scale-150">
               <FaWhatsapp size={24} />
             </a>
-            <a href="" target="_blank" rel="noopener noreferrer" className="px-6 hover:text-purple-500 dark:hover:text-purple-300 transition-all duration-300 transform hover:scale-150">
+            <a href="https://t.me/Cup2t" target="_blank" rel="noopener noreferrer" className="px-6 hover:text-purple-500 dark:hover:text-purple-300 transition-all duration-300 transform hover:scale-150">
               <FaTelegramPlane size={24} />
             </a>
           </div>

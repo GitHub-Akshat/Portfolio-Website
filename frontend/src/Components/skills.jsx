@@ -60,8 +60,8 @@ const Skills = () => {
           renderBullet: (index, className) => {
             return `<span class="${className} bg-blue-700 dark:bg-gray-300 my-4"></span>`; // Change the colors here
         }}}
-        onSlideChange={() => console.log('slide change')}
-        onSwiper={(swiper) => console.log(swiper)}
+        // onSlideChange={() => console.log('slide change')}
+        // onSwiper={(swiper) => console.log(swiper)}
         loop={true}
       >
       <div className="swiper-button-prev text-blue-700 dark:text-gray-300 md:p-16"></div>
