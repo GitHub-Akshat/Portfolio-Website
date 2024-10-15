@@ -56,13 +56,13 @@ const Contact = () => {
               <label className="block text-black dark:text-neutral-200 mb-2">
                 Full Name
               </label>
-              <input type="text" placeholder="Your Full Name" className="w-full px-4 py-2 border border-gray-300 dark:border-neutral-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" name="name" required/>
+              <input type="text" placeholder="Enter Your Full Name" className="w-full px-4 py-2 border border-gray-300 dark:border-neutral-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" name="name" required/>
             </div>
             <div className="w-full md:w-1/2 mt-4 md:mt-0">
               <label className="block text-black dark:text-neutral-200 mb-2">
                 Email
               </label>
-              <input type="email" placeholder="Your Email Address" className="w-full px-4 py-2 border border-gray-300 dark:border-neutral-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" name="email" required/>
+              <input type="email" placeholder="abc@mail.com" className="w-full px-4 py-2 border border-gray-300 dark:border-neutral-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" name="email" required/>
             </div>
           </div>
 
@@ -72,7 +72,7 @@ const Contact = () => {
               <label className="block text-black dark:text-neutral-200 mb-2">
                 Mobile No.
               </label>
-              <input type="contact number" placeholder="Mobile Number" className="w-full px-4 py-2 border border-gray-300 dark:border-neutral-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" name="contact" required/>
+              <input type="number" placeholder="1234567890 (Optional)" className="w-full px-4 py-2 border border-gray-300 dark:border-neutral-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" name="contact"/>
             </div>
             <div className="w-full md:w-1/2 mt-4 md:mt-0">
               <label className="block text-black dark:text-neutral-200 mb-2">
@@ -87,7 +87,7 @@ const Contact = () => {
             <label className="block text-black dark:text-neutral-200 mb-2">
               Description
             </label>
-            <textarea cols={25} rows={5} type="text" placeholder="Project Details" className="w-full px-4 py-2 border border-gray-300 dark:border-neutral-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" name="Message" required/>
+            <textarea cols={25} rows={5} type="text" placeholder="Message for Akshat" className="w-full px-4 py-2 border border-gray-300 dark:border-neutral-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" name="Message" required/>
           </div>
 
           <button className="w-full px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-transform duration-200 hover:scale-105 hover:shadow-lg active:scale-95 active:shadow-none">

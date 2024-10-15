@@ -15,6 +15,11 @@ import { BiLogoGit } from "react-icons/bi"
 import { BiLogoGithub } from "react-icons/bi"
 import ChatGptIcon from "/src/assets/cg.png"
 import Gemini from "/src/assets/g.png"
+import aws from "/src/assets/aws.png"
+import cdnary from "/src/assets/cdnary.png"
+import r from "/src/assets/r.jpg"
+import v from "/src/assets/v.png"
+import n from "/src/assets/n.jpg"
 import GC from "/src/assets/gc.png"
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
@@ -241,7 +246,69 @@ const Skills = () => {
               animate="animate" 
               whileHover={{scale:1.1}} 
               className="p-4 rounded-2xl border-neutral-600 dark:border-neutral-100 border-4">
-              <img src={GC} className="h-20 w-20 text-7xl dark:text-white"/>
+              <img src={GC} className="h-20 w-20 text-7xl dark:text-white dark:bg-white"/>
+            </motion.div>
+          </motion.div>
+        </div>
+      </SwiperSlide>
+      <SwiperSlide className="p-4">
+        <div className="flex flex-col justify-center">
+          <h2 className="mb-10 md:mb-16 pt-3 pb-3 text-black dark:text-neutral-200 text-lg sm:text-xl lg:text-2xl font-normal text-center">Cloud Services</h2>
+          <motion.div
+            initial={{x:-100,opacity:0}}
+            whileInView={{x:0,opacity:1}}
+            transition={{duration:0.5, delay:0.2}}
+            className="flex flex-wrap items-center justify-center gap-4">
+            <motion.div
+              variants={iconVariants(2.5)}
+              initial="initial"
+              animate="animate"
+              whileHover={{scale:1.1}} 
+              className="p-4 rounded-2xl border-neutral-600 dark:border-neutral-100 border-4">
+              <img src={aws} className="h-20 w-20 text-7xl bg-white"/>
+            </motion.div>
+            <motion.div
+              variants={iconVariants(5)}
+              initial="initial"
+              animate="animate" 
+              whileHover={{scale:1.1}} 
+              className="p-4 rounded-2xl border-neutral-600 dark:border-neutral-100 border-4 ">
+              <img src={cdnary} className="h-20 w-20 text-7xl dark:text-white dark:bg-white"/>
+            </motion.div>
+          </motion.div>
+        </div>
+      </SwiperSlide>
+      <SwiperSlide className="p-4">
+        <div className="flex flex-col justify-center">
+          <h2 className="mb-10 md:mb-16 pt-3 pb-3 text-black dark:text-neutral-200 text-lg sm:text-xl lg:text-2xl font-normal text-center">Hosting Platforms</h2>
+          <motion.div
+            initial={{x:-100,opacity:0}}
+            whileInView={{x:0,opacity:1}}
+            transition={{duration:0.5, delay:0.2}}
+            className="flex flex-wrap items-center justify-center gap-4">
+            <motion.div
+              variants={iconVariants(2.5)}
+              initial="initial"
+              animate="animate"
+              whileHover={{scale:1.1}} 
+              className="p-4 rounded-2xl border-neutral-600 dark:border-neutral-100 border-4">
+              <img src={r} className="h-20 w-20 text-7xl bg-white"/>
+            </motion.div>
+            <motion.div
+              variants={iconVariants(5)}
+              initial="initial"
+              animate="animate" 
+              whileHover={{scale:1.1}} 
+              className="p-4 rounded-2xl border-neutral-600 dark:border-neutral-100 border-4">
+              <img src={v} className="h-20 w-20 text-7xl dark:text-white dark:bg-white"/>
+            </motion.div>
+            <motion.div
+              variants={iconVariants(5)}
+              initial="initial"
+              animate="animate" 
+              whileHover={{scale:1.1}} 
+              className="p-4 rounded-2xl border-neutral-600 dark:border-neutral-100 border-4">
+              <img aria-label="netlify" src={n} className="h-20 w-20 text-7xl dark:text-white"/>
             </motion.div>
           </motion.div>
         </div>
