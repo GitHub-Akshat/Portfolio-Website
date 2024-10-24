@@ -75,7 +75,7 @@ const Projects = () => {
                       {project.title} 
                     </h2>
                     <p className="text-base text-gray-700 dark:text-neutral-400 mb-4">
-                      <span className="text-gray-800 dark:text-neutral-300">Technologies Used :</span> {project.technologies}
+                      <span className="text-gray-800 dark:text-neutral-300">Technologies Used :</span> {project.technologies.join(', ')}
                     </p>
                     <p className="text-sm text-gray-800 dark:text-neutral-300 mb-6">
                       {project.description}
